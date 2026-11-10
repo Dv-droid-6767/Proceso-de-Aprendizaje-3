@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url(../img/Fondo-restaurante-sushi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#cabecera{
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+#cabecera #titulo h1 a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Ink Free";
+    font-size: 70px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    color: black;
+    transition: 0.7s ease;
+}
+#cabecera #titulo h1 a:hover{
+    color: #555555;
+    transform: scale(1.05);
+}
+#cabecera ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+#cabecera ul a{
+    margin: 10px;
+    padding: 10px;
+    font-family: "Ink Free";
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.7s ease;
+}
+
+#cabecera ul a:hover{
+    color: #ffffff;
+    background-color: #264272;
+    transform: scale(1.05);
+}
+#menu{
+    background-color: #101c30;
+    color: white;
+}
+#menu a.active{
+    border-bottom: 2px solid #ff4400;
+    font-weight: bold;
+}
+#menu a.active:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #101c30;
+    background-color: #264272;
+    transform: scale(1.05);
+}
+#imagen-central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%; 
+}
+#imagen-central img{
+    display: block;
+    width: 900px;
+    margin-top: 20px;
+}
+#contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.cabecera-articulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+section h2, section h3{
+    font-size:  30px;
+    margin: 20px;
+    flex: 1;
+}
+section h2{
+    position: relative;
+    left: 20vh;
+    margin-top: 40px;
+}
+section h3{
+    text-align: left;
+    text-decoration: underline;
+}
+section aside{
+    position: absolute;
+    text-align: center;
+    left: 1100px;
+    top: 830px;
+    transition: 0.7s ease;
+    z-index: 1;
+}
+section aside h6{
+    font-family: "Arial";
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+section aside:hover{
+    color: #555555;
+    transform: scale(1.05);
+}
+section aside img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+section #bloque-flotante{
+    display: block;
+    width: 100%;
+}
+section .sushi.flotante{
+    float: left;
+    width: 220px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    z-index: 2;
+    transition: 0.7s ease;
+}
+section .sushi.flotante:hover{
+    transform: scale(1.05);
+}
+section p{
+    /* width: 100%; */
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #555;
+    font-size: 16px;
+}
+#pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#pie p{
+    margin: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #b83b36;
+    cursor: default;
+}
+#pie a{
+    display: inline-block;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin: 5px;
+    margin-bottom: 30px;
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+    transition: 1s ease;
+}
+
+#pie #twitter:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.20);
+}
+#pie #facebook:hover{
+    background-color: #0866FF;
+    color: white;
+    transform: scale(1.20);
+}
+#pie #instagram:hover{
+    color: white;
+    background-image: url(../img/fondo-colorido.png);
+    background-size: 100% 100%;
+    background-position: center;
+    transform: scale(1.20);
+}
+#pie #tiktok:hover{
+    background-color: black;
+    text-shadow: 2px 0 0.9px #fe2c55, -2px 0 0.9px #24ECE7;
+    color: white;
+    transform: scale(1.20);
+}
